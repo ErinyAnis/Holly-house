@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --transition: 0.3s ease;
+  --blue-primary: #3E5082;
+  --blue: #53669A;
+  --dark-blue: #2B3C6B;
+  --red: #EF514C;
+  --white: #FFFFFF;
+  --gray: #808080;
+  --basic: #1D1B1B;
+  --gray-light: #ECECEC;
+  --gray-middle: #808080;
+  --grey-high: #646363;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+p {
+  color: var(--gray);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* main-components */
+.red {
+  color: #EF514C;
+}
+
+.blue-primary {
+  color: var(--blue-primary);
+} 
+
+.gray-middle {
+  color: var(--gray-middle);
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.main-btn {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    font-weight: 500;
+    color: var(--white);
+    padding: 8px 25px;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.main-btn:hover {
+  color: var(--blue);
+  background-color: transparent;
+  border: 1px solid var(--blue);
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.secondary-font {
+  font-family: "Merienda", cursive;
+}
+
+.sec-ptb {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.landing-margin {
+   padding-top: 100px;
+}
+
+@media(max-width: 767px) {
+  .main-btn {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+  .sec-ptb {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+}
+
+/* header */
+nav .logo img {
+  height: 45px;
+}
+
+nav {
+  width: 100%;
+  background: var(--black);
+  padding: 15px 117px !important;
+  box-shadow: rgb(0 0 0 / 14%) 0px 1px 9px 0px;
+  transition: var(--transition);
+  z-index: 100;
+  font-family: "Merienda", cursive;
+   background-color: var(--white);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li .nav-link {
+  font-weight: 700;
+  transition: var(--transition);
+  color: var(--blue-primary);
+  font-size: 16px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--red) !important;
+}
+
+nav label {
+  width: 30px;
+}
+
+nav .menu-btn img {
+  max-width: 100%;
+  cursor: pointer;
+  display: none;
+  transition: var(--transition);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* header-responsive */
+@media (max-width: 992px) {
+  nav {
+    padding: 10px 25px !important;
+    justify-content: space-between;
+  }
+
+  nav .menu-btn i {
+    display: block;
+  }
+
+  #click:checked ~ .menu-btn img {
+    content: url("../images/x.png");
+  }
+
+  nav ul {
+    position: absolute;
+    top: 65px;
+    left: -100%;
+    min-height: 93vh;
+    width: 80%;
+    text-align: center;
+    display: block;
+    transition: all 0.4s ease;
+    z-index: 100;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 8%) 7px 7px 9px 0px;
+    padding-top: 10px;
+    background-color: var(--white);
+  }
+
+  #click:checked ~ ul {
+    left: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin: 0;
+  }
+
+  nav ul li .nav-link {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    padding: 12px 0 12px 35px;
+    text-align: start;
+  }
+
+  #click:checked ~ ul li .nav-link {
+    margin-left: 0px;
+  }
+
+  nav .menu-btn img {
+    display: block;
+  }
+}
+/* end-header */
+/* repeated-components */
+
+/* form */
+.registrations {
+    background-image: url(../images/form-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.registrations h2 {
+    line-height: 42px;
+
+}
+
+.registrations .title div {
+    color: #F89B98;
+}
+
+.registrations input, .registrations textarea {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--basic);
+    font-weight: 500;
+}
+
+.registrations input:focus, .registrations textarea:focus {
+    box-shadow: none;
+}
+
+.registrations textarea {
+    resize: none;
+    height: 95%;
+}
+
+.registrations button {
+    border: 1px solid var(--white);
+    background-color: transparent;
+    padding: 7px 50px;
+}
+
+.registrations button:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+@media(max-width: 767px) {
+    .registrations {
+        background-image: url(../images/registration-mobile-bg.png);
+    }
+    .registrations .title div {
+        font-size: 14px;
+    }
+    .registrations h2 {
+        font-size: 22px;
+    }
+}
+
+
+
+
+/* footer */
+footer {
+  background-image: url("../images/footer-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+footer .logo {
+  width: 100px;
+}
+
+footer hr {
+  color: var(--basic);
+  width: 40%;
+  margin: 20px auto 0;
+}
+
+footer .social-links a {
+    background-color: #FFFFFF33;
+    padding: 6px 9px;
+    border-radius: 6px;
+    margin-right: 14px;
+    width: 37px;
+    text-align: center;
+    color: var(--white);
+}
+
+footer a:hover {
+  color: var(--dark-blue);
+}
+
+footer a {
+  color: var(--blue);
+}
+
+footer h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--blue-primary);
+}
+
+footer ul li {
+  padding-bottom: 5px;
+}
+
+footer .contacts {
+    color: var(--blue);
+}
+
+footer p {
+  padding-right: 25%;
+  color: var(--basic);
+}
+
+footer .copy-right {
+  color: var(--basic);
+}
+
+footer .copy-right a {
+  color: var(--white);
+}
+
+footer .copy-right a:hover {
+  color: var(--blue-primary);
+}
+
+@media (max-width: 992px) {
+  footer .column-1 {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  footer .column {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    font-size: 14px;
+  }
+
+  footer .column-1, footer .column {
+    width: 100%;
+    margin-bottom: 14px;
+  }
+
+  footer .social-links a {
+    padding: 7px 10px;
+    margin-right: 10px;
+    width: 35px;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,275 @@
+.about-us .title h1 {
+    font-size: 60px;
+}
+
+.about-us .title a {
+    color: var(--gray-middle);
+    transition: var(--transition);
+}
+
+.about-us .title a:hover {
+    color: #3e3e3e;
+}
+
+.about-us .title a i {
+    font-size: 14px;
+}
+
+/* why-us */
+.why-us .content div {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.why-us .content p {
+    color: var(--gray-middle);
+}
+
+.why-us ul {
+    color: var(--blue-primary);
+}
+
+.why-us ul li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding-right: 20px;
+        font-size: 14px;
+}
+
+.why-us ul li img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+@media(max-width: 767px) {
+    .about-us .title {
+        margin-bottom: 25px;
+    }
+    .why-us .main-img {
+        height: 200px;
+        width: 100%;
+        object-fit: contain;
+    }
+    .why-us .content div, .why-us .content p {
+        font-size: 14px;
+    }
+    .why-us .content h2 {
+        font-size: 20px;
+    }
+    .why-us ul li {
+        padding: 0;
+    }
+}
+
+/* .our-team */
+.our-Teachers .head-title h3 {
+    font-size: 30px;
+} 
+
+.our-Teachers .teacher {
+    position: relative;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.our-Teachers .background-title {
+    background-color: #53669A;
+    height: 30%;
+    width: 98%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    right: 1%;
+    text-align: center;
+    padding-top: 6%;
+    transition: var(--transition);
+}
+
+.our-Teachers .background-title h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.our-Teachers .background-title div {
+    font-size: 14px;
+}
+
+.our-Teachers .teacher:hover .background-title {
+    bottom: -2%;
+    z-index: 1;
+}
+
+.our-Teachers .teacher img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.slick-next:before, .slick-prev:before {
+    font-family: "Font Awesome 6 free"; 
+	font-weight: 400;
+    color: var(--blue);
+    font-size: 30px;
+}
+
+.slick-prev, .slick-next {
+    top: 45%;
+    z-index: 3;
+}
+
+.slick-next {
+    right: -20px;
+}
+
+.slick-prev {
+    left: -30px;
+}
+
+.slick-next:before {
+    content: '\f35a';
+}
+
+.slick-prev:before {
+    content: '\f359';
+}
+
+/* parents-feedback */
+.parents-feedback .box-container {
+    background-color: #F89B98;
+    border-radius: 15px;
+    padding: 30px 15px;
+}
+
+.parents-feedback .box-container .item-container {
+    background-color: var(--white);
+    color: var(--basic);
+    border-radius: 15px;
+   padding: 12px 20px;
+}
+
+.parents-feedback .box-container .item-container .box {
+     display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+}
+
+.parents-feedback .box-container .box.expanded {
+  -webkit-line-clamp: unset;
+}
+
+.parents-feedback .box-container .feedback-img {
+    bottom: -17%;
+    height: 280px;
+}
+
+.parents-feedback .box-container .slick-next {
+    right: -30px;
+}
+
+.parents-feedback .box-container .slick-prev {
+    left: -40px;
+}
+
+.parents-feedback .head-title h3 {
+    padding: 0 12%;
+}
+
+@media(max-width: 767px) {
+    .about-us .title h1 {
+        font-size: 42px;
+    }
+    .about-us .bread-scrumb {
+        font-size: 14px;
+    }
+    .about-us .bread-scrumb i {
+        font-size: 12px !important;
+    }
+    .our-Teachers .head-title h3 {
+        font-size: 22px;
+    }
+    .our-Teachers .teacher {
+        margin-bottom: 15px;
+    }
+    .our-Teachers .slick-dots li button:before {
+        font-size: 8px;
+    }
+    .our-Teachers .slick-dots li {
+        margin: 0;
+    }
+    .our-Teachers .head-title div {
+        font-size: 14px;
+    }
+    .our-Teachers .background-title {
+        padding-top: 5%;
+        z-index: 1;
+        height: 20%;
+    }
+    .our-Teachers .teacher:hover .background-title {
+        bottom: 0;
+        z-index: 1;
+    }
+    .our-Teachers .background-title h4 {
+        font-size: 18px;
+    }
+    .our-Teachers .background-title div {
+        font-size: 12px;
+    }
+    .parents-feedback .box-container .box {
+        font-size: 14px;
+    }
+    .parents-feedback .box-container .feedback-img {
+        height: 160px;
+    }
+    .parents-feedback .slick-next:before, .parents-feedback .slick-prev:before {
+        font-size: 25px;
+    }
+    .parents-feedback .slick-dots {
+        bottom: -30px;
+    }
+}
+
+/* ............................................................... */
+.contact-us ul li {
+    font-weight: 800;
+}
+
+.connect-with-us p {
+    color: var(--basic);
+    padding: 0 25%;
+    font-weight: 500;
+}
+
+.connect-with-us .social-links div {
+    background-color: #43404033;
+    border-radius: 5px;
+    padding: 4px 11px;
+    margin: 0  7px;
+}
+
+.connect-with-us .social-links i {
+    color: var(--basic);
+    transition: var(--transition);
+        font-weight: 600;
+        font-size: 14px;
+}
+
+.connect-with-us .social-links div:hover i {
+    color: var(--red);
+}
+
+@media(max-width: 767px) {
+    .connect-with-us h2 {
+        font-size: 24px;
+    }
+
+.connect-with-us p {
+    padding: 0 10%;
+   font-size: 14px;
+}
+}
+.map {
+    margin-bottom: -6px;
+}
+
