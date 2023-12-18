@@ -32,13 +32,14 @@
                 <li><a class="nav-link" href="about.html">About</a></li>
                 <li><a class="nav-link" href="contact.html">Contact</a></li>
                 <li><a class="nav-link active" href="login.html">Login</a></li>
+                <li><a class="nav-link" href="register.html">Sign In</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="about-us landing-margin container">
         <div class="title text-center">
-            <h1 class="secondary-font fw-700 blue-primary">Login</h1>
+            <h1 class="secondary-font fw-700 blue-primary mb-3">Login</h1>
             <div class="align-items-center justify-content-center bread-scrumb d-none d-md-flex">
                 <a href="index.html">Home<i class="fa-solid fa-chevron-right ms-1 me-2"></i></a>
                 <div class="red fw-500">Login</div>
@@ -46,32 +47,39 @@
         </div>
     </section>
 
-    <section class="registrations sec-ptb mt-4">
+    <section class="login sec-ptb pt-4">
         <div class="container">
-            <div class="title text-center mb-4">
-                <div>Online Registrations</div>
-                <h2 class="secondary-font">Admission Going On ! <br>
-                    Hurry Up To Admit Your Seat</h2>
-            </div>
             <div class="row justify-content-center">
-                <div class="col-md-9 col-lg-8">
-                    <form action="" method="post">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name" name="name">
-                                <input type="email" class="form-control" placeholder="Your Email" name="email">
-                                <input type="number" class="form-control" placeholder="Phone Number" name="phone">
-                                <input type="text" class="form-control" placeholder="Subject" name="subject">
+                <div class="col-md-8">
+                    <div class=" registrations">
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-lg-7 m-auto">
+                                    <input type="text" class="form-control" placeholder="Your Name" name="name">
+                                    <input type="email" class="form-control" placeholder="Your Email" name="email">
+                                    <div class="buttom-links d-flex justify-content-between mt-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input d-block" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                        <div class="forgot-password">
+                                            <a href="#">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                    placeholder="Message" name="message"></textarea>
+                
+                            <div class="text-center mt-3">
+                                <button type="submit" class="main-btn">Login</button>
+                                <div class="sign-up mt-3">
+                                    Don't have an account? <a href="register.html">Sign up</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="text-center mt-3">
-                            <button type="submit" class="main-btn">Send</button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>

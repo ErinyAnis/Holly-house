@@ -16,7 +16,7 @@
 }
 
 /* why-us */
-.why-us .content div {
+.why-us .content .list-container {
     font-weight: 500;
     font-size: 18px;
 }
@@ -29,7 +29,7 @@
     color: var(--blue-primary);
 }
 
-.why-us ul li {
+.why-us ul .child {
     margin-bottom: 10px;
     font-weight: 500;
     padding-right: 20px;
@@ -42,22 +42,19 @@
 }
 
 @media(max-width: 767px) {
-    .about-us .title {
-        margin-bottom: 25px;
-    }
-    .why-us .main-img {
-        height: 200px;
-        width: 100%;
-        object-fit: contain;
-    }
     .why-us .content div, .why-us .content p {
         font-size: 14px;
     }
     .why-us .content h2 {
         font-size: 20px;
     }
-    .why-us ul li {
+    .why-us ul .child {
         padding: 0;
+    }
+    .why-us .main-img {
+        height: 200px;
+        width: 100%;
+        object-fit: contain;
     }
 }
 
@@ -273,3 +270,63 @@
     margin-bottom: -6px;
 }
 
+/* --------------------------------------- */
+/* login & register */
+.login .registrations {
+    background-image: url(../images/login-bg.png);
+    background-size: cover;
+    border-radius: 45px;
+    padding: 100px 60px;
+}
+
+.login .buttom-links input {
+    background-color: transparent;
+    cursor: pointer;
+}
+.login .buttom-links {
+    font-size: 14px;
+}
+
+.login .buttom-links .form-check-input:checked {
+    background-color: transparent;
+    border-color: var(--white);
+}
+
+.login .buttom-links .form-check-input:focus {
+    border-color: var(--white);
+}
+
+.login .buttom-links a {
+    color: var(--white);
+}
+
+.login .sign-up {
+    font-size: 14px;
+}
+
+.login .sign-up a {
+    color: var(--dark-blue);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.login .sign-up a:hover {
+    color: var(--white);
+}
+
+.login .forgot-password a {
+    transition: var(--transition);
+}
+
+.login .forgot-password a:hover {
+    color: var(--dark-blue);
+}
+
+@media(max-width: 767px) {
+    .login .buttom-links {
+        font-size: 12px;
+    }
+    .login .buttom-links input {
+        margin-top: 2px;
+    }
+}

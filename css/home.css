@@ -337,7 +337,7 @@
 }
 
 /* why-us */
-.why-us .content div {
+.why-us .content .list-container {
     font-weight: 500;
     font-size: 18px;
 }
@@ -350,7 +350,7 @@
     color: var(--blue-primary);
 }
 
-.why-us ul li {
+.why-us ul .child {
     margin-bottom: 10px;
     font-weight: 500;
     padding-right: 20px;
@@ -369,7 +369,7 @@
     .why-us .content h2 {
         font-size: 20px;
     }
-    .why-us ul li {
+    .why-us ul .child {
         padding: 0;
     }
     .why-us .main-img {
